@@ -1,0 +1,26 @@
+{
+  "name": "node4java-yape-talks",
+  "version": "1.0.0",
+  "description": "Código utilizado en las charlas de Node4Java en Yape/BCP",
+  "main": "await-async.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faferreyra/node4java-yape-talks.git"
+  },
+  "author": "Fabian Ferreyra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faferreyra/node4java-yape-talks/issues"
+  },
+  "homepage": "https://github.com/faferreyra/node4java-yape-talks#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  }
+}
