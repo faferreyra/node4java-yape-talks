@@ -1,0 +1,24 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+	// Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+
+	// List of extensions which should be recommended for users of this workspace.
+	"recommendations": [
+		"github.vscode-pull-request-github",
+		"eamodio.gitlens",
+		"firsttris.vscode-jest-runner",
+		"esbenp.prettier-vscode",
+		"prisma.prisma",
+		"ms-vscode-remote.remote-containers",
+		"ms-azuretools.vscode-docker",
+		"eg2.vscode-npm-script",
+		"dbaeumer.vscode-eslint",
+		"ms-vsliveshare.vsliveshare-pack",
+		"alexcvzz.vscode-sqlite",
+		"humao.rest-client"
+	],
+	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
+	"unwantedRecommendations": [
+		
+	]
+}

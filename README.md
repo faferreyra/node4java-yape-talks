@@ -1,15 +1,32 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# Image Collector
+## Descripción
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+**Image Collector** es una aplicación que le permitirá a los usuarios construir una colección de imágenes de libre uso.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>    
+Los usuarios tendrán la posibilidad de ver la colección de imágenes de otros usuarios de la aplicación, y podrán marcar una colección como "favorita"
 
-## Description
+Los usuarios estarán almacenados en la base de datos, deberán estar logueados para agregar imágenes a su colección, y marcar una colección como favorita.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### Pre-condiciones del ejercicio
+
+* No se realizará la registración de usuarios, estarán presentes en la BD.
+* El usuario será identificado mediante un token JWT que deberá enviar a los endpoints que requieran seguridad.
+* El mecanismo de seguridad ya está desarrollado.
+
+### Configuración
+
+Crear un archivo .env en el raíz del proyecto, con el siguiente contenido:
+
+```ini
+# URL al archivo de la base de datos SQLite
+DATABASE_URL=file:./dev.db
+# Secret para la firma de los token JWT
+JWT_SECRET_KEY=some-random-string
+```
+
+## Dependencias
+
+* Se utilizará la API de **Picsum** para obtener las imágenes disponibles para armar la colección
 
 ## Installation
 
@@ -43,16 +60,10 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+## Prisma stuff
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+### Migraciones
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+```bash
+npx prisma migrate dev --name XXX
+```
