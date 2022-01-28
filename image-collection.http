@@ -10,3 +10,6 @@ Content-Type: application/json
 
 GET http://localhost:3000/profile HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZmZXJyZXlyYUBnbWFpbC5jb20iLCJzdWIiOjEsImlhdCI6MTY0Mjc2MzcyOCwiZXhwIjoxNjQyNzY0MzI4fQ.cfg1IVMaOVXA100pedlx22c6wFSlaIxgKn17HpbDW-Q
+
+GET http://localhost:3000/collections HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImZmZXJyZXlyYUBnbWFpbC5jb20iLCJzdWIiOjEsImlhdCI6MTY0MzMwMDQyMywiZXhwIjoxNjQzMzAxMDIzfQ.i16ilHd6pjbiqGp7zrNhGtZlsIax147Yw_AJa8XWp24
